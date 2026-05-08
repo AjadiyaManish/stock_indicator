@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_product_stock_indicator.ProductCard" t-inherit="point_of_sale.ProductCard" t-inherit-mode="extension">
+        <xpath expr="//article" position="attributes">
+            <attribute name="t-on-keypress">
+                (event) => event.code === 'Space' ? this.onProductClick(event) : ()=>{}
+            </attribute>
+            <attribute name="t-on-click.stop">
+                this.onProductClick
+            </attribute>
+            <attribute name="t-att-class" add="{'out-of-stock-fade': show_stock and stock_qty &lt;= 0}" separator=" "/>
+        </xpath>
+        <xpath expr="//*[hasclass('product-name')]" position="before">
+            <div t-if="show_stock and is_visible" class="on-demand-container">
+                <span class="on-demand-badge"><i class="fa fa-plus" style="font-size: 8px;"/> On Demand</span>
+            </div>
+        </xpath>
+        <xpath expr="//article" position="inside">
+            <div t-if="show_stock and is_visible" class="product-stock-container">
+                <div class="product-stock-badge on-hand-badge" t-att-class="{ 'low-stock': has_low_stock }">
+                    <span class="stock-label">On Hand</span>
+                    <span class="stock-qty"><t t-esc="stock_qty"/></span>
+                </div>
+                <div class="product-stock-badge receive-badge">
+                    <span class="stock-label">Review</span>
+                    <span class="stock-qty"><t t-esc="incoming_qty"/></span>
+                </div>
+            </div>
+        </xpath>
+    </t>
+    <t t-name="pos_product_stock_indicator.VariantSelectionDialog">
+        <Dialog title="'Select Variant'">
+            <div class="variant-selection-container p-3">
+                <p class="text-muted mb-3">This product has multiple variants. Please select one to add to the On Demand cart:</p>
+                <div class="variant-list d-flex flex-column gap-2">
+                    <t t-foreach="props.variants" t-as="variant" t-key="variant.id">
+                        <button class="btn btn-outline-primary variant-selection-btn d-flex justify-content-between align-items-center p-3" t-on-click="() => this.selectVariant(variant)">
+                            <span class="variant-name fw-bold"><t t-esc="variant.display_name or variant.name"/></span>
+                            <span class="badge rounded-pill bg-primary opacity-75">Select</span>
+                        </button>
+                    </t>
+                </div>
+            </div>
+            <t t-set-slot="footer">
+                <button class="btn btn-secondary" t-on-click="props.close">Cancel</button>
+            </t>
+        </Dialog>
+    </t>
+</templates>

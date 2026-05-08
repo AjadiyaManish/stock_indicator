@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_product_stock_indicator.OnDemandCartDialog">
+        <Dialog title="'On Demand Cart'" size="'md'" contentClass="'on-demand-dialog'">
+            <div class="on-demand-cart-body" style="padding: 10px; max-height: 400px; overflow-y: auto;">
+                <t t-if="this.cartItems.length &gt; 0">
+                    <table class="table table-striped table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Product</th>
+                                <th class="text-center" style="width: 100px;">Quantity</th>
+                                <th class="text-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="this.cartItems" t-as="item" t-key="item.id">
+                                <tr>
+                                    <td class="align-middle fw-bold"><t t-esc="item.name"/></td>
+                                    <td class="align-middle text-center">
+                                        <div class="input-group input-group-sm" style="width: 120px; margin: 0 auto;">
+                                            <button class="btn btn-outline-secondary" type="button" t-on-click="() =&gt; this.changeQty(item.id, -1)">
+                                                <i class="fa fa-minus"/>
+                                            </button>
+                                            <input type="number" 
+                                                   class="form-control text-center" 
+                                                   t-att-value="item.qty" 
+                                                   t-on-input="(ev) =&gt; this.updateQty(item.id, ev)"
+                                                   min="1"/>
+                                            <button class="btn btn-outline-secondary" type="button" t-on-click="() =&gt; this.changeQty(item.id, 1)">
+                                                <i class="fa fa-plus"/>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle text-end">
+                                        <button class="btn btn-sm btn-outline-danger" t-on-click="() =&gt; this.removeItem(item.id)">
+                                            <i class="fa fa-trash" />
+                                        </button>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </t>
+                <t t-else="">
+                    <div class="text-center p-4 text-muted">
+                        <i class="fa fa-shopping-basket fa-3x mb-3" />
+                        <h5>Your On Demand Cart is empty.</h5>
+                        <p>Click "✦ ON DEMAND" on any product to add it here.</p>
+                    </div>
+                </t>
+            </div>
+            <t t-set-slot="footer">
+                <t t-if="this.cartItems.length &gt; 0">
+                    <button class="btn btn-success" t-on-click="this.confirmCart">Confirm Order</button>
+                    <button class="btn btn-outline-danger ms-2" t-on-click="this.clearCart">Clear Cart</button>
+                </t>
+                <button class="btn btn-primary ms-auto" t-on-click="props.close">Close</button>
+            </t>
+        </Dialog>
+    </t>
+</templates>

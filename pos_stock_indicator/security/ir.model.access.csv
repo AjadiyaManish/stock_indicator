@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_po_demand,access.po.demand,model_po_demand,,1,1,1,1
+access_po_demand_line,access.po.demand.line,model_po_demand_line,,1,1,1,1

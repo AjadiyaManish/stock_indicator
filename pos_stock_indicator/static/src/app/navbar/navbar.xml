@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_product_stock_indicator.Navbar" t-inherit="point_of_sale.Navbar" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('navbar-menu')]" position="after">
+            <div class="d-flex align-items-center">
+                <button class="btn future-po-button ms-2" t-att-class="{'active': mainButton === 'future_po'}" t-on-click="() => this.onClickFuturePO()">
+                     <i class="fa fa-truck" />
+                     <span t-if="!ui.isSmall" class="ms-1">Future Received Product List</span>
+                </button>
+                <button class="btn ms-3 website-cart-btn position-relative" t-on-click="() => this.onClickOnDemandCart()" title="On Demand Cart">
+                    <i class="fa fa-shopping-cart" />
+                    <span t-if="this.onDemandCartCount > 0" class="on-demand-badge-count">
+                        <t t-esc="this.onDemandCartCount"/>
+                    </span>
+                </button>
+            </div>
+        </xpath>
+    </t>
+</templates>

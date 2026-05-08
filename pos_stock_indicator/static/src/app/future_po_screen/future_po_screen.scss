@@ -1,0 +1,17 @@
+.future-po-button {
+    white-space: nowrap;
+}
+
+.order-row.pointer {
+    cursor: pointer;
+}
+
+.order-row.highlight {
+    background-color: #714B67 !important;
+    color: white !important;
+}
+
+.order-row.highlight .badge {
+    background-color: white !important;
+    color: #28a745 !important;
+}
