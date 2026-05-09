@@ -126,94 +126,94 @@
         <div style="color:#7A7A8A!important;font-size:0.92rem!important;font-style:italic!important;font-family:'Georgia',serif!important;">From POS floor demand to validated inventory fulfillment.</div>
       </div>
 
-      <!-- 2-column step cards -->
-      <div style="display:flex!important;flex-wrap:wrap!important;gap:16px!important;">
+      <!-- TABLE-BASED 2-column layout: Odoo-safe -->
+      <table style="width:100%!important;border-collapse:separate!important;border-spacing:16px!important;">
 
-        <!-- Step 1 -->
-        <div style="width:calc(50% - 8px)!important;border:1px solid #E2D9C8!important;border-radius:10px!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#FEF5F5!important;border-bottom:1px solid #FADCDC!important;border-radius:10px 10px 0 0!important;">
-            <div style="min-width:36px!important;height:36px!important;background-color:#C44D58!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">1</div>
-            <div>
-              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Visual Stock Alerts</div>
-              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Low stock triggers a <strong style="color:#C44D58!important;">Red HUD Badge</strong>. Cashiers start restocking by clicking <strong>✦ ON DEMAND</strong> cards immediately.</div>
+        <!-- Row 1: Steps 1 & 2 -->
+        <tr>
+          <td style="width:50%!important;vertical-align:top!important;border:1px solid #E2D9C8!important;border-radius:10px!important;padding:0!important;overflow:hidden!important;">
+            <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#FEF5F5!important;border-bottom:1px solid #FADCDC!important;">
+              <div style="min-width:36px!important;height:36px!important;background-color:#C44D58!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">1</div>
+              <div>
+                <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Visual Stock Alerts</div>
+                <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Low stock triggers a <strong style="color:#C44D58!important;">Red HUD Badge</strong>. Cashiers start restocking by clicking <strong>✦ ON DEMAND</strong> cards immediately.</div>
+              </div>
             </div>
-          </div>
-          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
-            <img src="img_1.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 1">
-          </div>
-        </div>
-
-        <!-- Step 2 -->
-        <div style="width:calc(50% - 8px)!important;border:1px solid #E2D9C8!important;border-radius:10px!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#FFF8EE!important;border-bottom:1px solid #F0D9A0!important;border-radius:10px 10px 0 0!important;">
-            <div style="min-width:36px!important;height:36px!important;background-color:#BA7517!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">2</div>
-            <div>
-              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Instant Restock Cart</div>
-              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">A smart <strong style="color:#BA7517!important;">On-Demand Queue</strong> inside POS to validate quantities before confirming the restocking mission.</div>
+            <div style="padding:16px 22px!important;background-color:#FAFAF8!important;">
+              <img src="img_1.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 1">
             </div>
-          </div>
-          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
-            <img src="img_2.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 2">
-          </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div style="width:calc(50% - 8px)!important;border:1px solid #E2D9C8!important;border-radius:10px!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#EFF5FF!important;border-bottom:1px solid #C7D4F5!important;border-radius:10px 10px 0 0!important;">
-            <div style="min-width:36px!important;height:36px!important;background-color:#185FA5!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">3</div>
-            <div>
-              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Smart PO Splitting</div>
-              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Backend splits orders by primary <strong style="color:#185FA5!important;">Vendors</strong> automatically for clean, organized procurement.</div>
+          </td>
+          <td style="width:50%!important;vertical-align:top!important;border:1px solid #E2D9C8!important;border-radius:10px!important;padding:0!important;overflow:hidden!important;">
+            <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#FFF8EE!important;border-bottom:1px solid #F0D9A0!important;">
+              <div style="min-width:36px!important;height:36px!important;background-color:#BA7517!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">2</div>
+              <div>
+                <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Instant Restock Cart</div>
+                <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">A smart <strong style="color:#BA7517!important;">On-Demand Queue</strong> inside POS to validate quantities before confirming the restocking mission.</div>
+              </div>
             </div>
-          </div>
-          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
-            <img src="img_3.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 3">
-          </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div style="width:calc(50% - 8px)!important;border:1px solid #E2D9C8!important;border-radius:10px!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#EDFAF5!important;border-bottom:1px solid #9FE1CB!important;border-radius:10px 10px 0 0!important;">
-            <div style="min-width:36px!important;height:36px!important;background-color:#0F6E56!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">4</div>
-            <div>
-              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Live Stock Reception</div>
-              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Receiving stock instantly updates the <strong style="color:#0F6E56!important;">On-Hand HUD</strong> across all POS devices. No manual refresh required.</div>
+            <div style="padding:16px 22px!important;background-color:#FAFAF8!important;">
+              <img src="img_2.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 2">
             </div>
-          </div>
-          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
-            <img src="img_4.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 4">
-          </div>
-        </div>
+          </td>
+        </tr>
 
-        <!-- Step 5 -->
-        <div style="width:calc(50% - 8px)!important;border:1px solid #E2D9C8!important;border-radius:10px!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#F5F0FF!important;border-bottom:1px solid #CECBF6!important;border-radius:10px 10px 0 0!important;">
-            <div style="min-width:36px!important;height:36px!important;background-color:#534AB7!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">5</div>
-            <div>
-              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Upcoming Stock List</div>
-              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Dashboard to see all <strong style="color:#534AB7!important;">Future Incoming Qty</strong> and confirmed Purchase Orders already on their way.</div>
+        <!-- Row 2: Steps 3 & 4 -->
+        <tr>
+          <td style="width:50%!important;vertical-align:top!important;border:1px solid #E2D9C8!important;border-radius:10px!important;padding:0!important;overflow:hidden!important;">
+            <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#EFF5FF!important;border-bottom:1px solid #C7D4F5!important;">
+              <div style="min-width:36px!important;height:36px!important;background-color:#185FA5!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">3</div>
+              <div>
+                <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Smart PO Splitting</div>
+                <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Backend splits orders by primary <strong style="color:#185FA5!important;">Vendors</strong> automatically for clean, organized procurement.</div>
+              </div>
             </div>
-          </div>
-          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
-            <img src="img_5.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 5">
-          </div>
-        </div>
-
-        <!-- Step 6 -->
-        <div style="width:calc(50% - 8px)!important;border:1px solid #E2D9C8!important;border-radius:10px!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#F5F4F2!important;border-bottom:1px solid #D4C9B0!important;border-radius:10px 10px 0 0!important;">
-            <div style="min-width:36px!important;height:36px!important;background-color:#4A4A5A!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">6</div>
-            <div>
-              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Precise Data Accuracy</div>
-              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Warehouse-level precision ensures POS team always has the most <strong style="color:#4A4A5A!important;">accurate stock data</strong> for customer assurance.</div>
+            <div style="padding:16px 22px!important;background-color:#FAFAF8!important;">
+              <img src="img_3.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 3">
             </div>
-          </div>
-          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
-            <img src="img_6.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 6">
-          </div>
-        </div>
+          </td>
+          <td style="width:50%!important;vertical-align:top!important;border:1px solid #E2D9C8!important;border-radius:10px!important;padding:0!important;overflow:hidden!important;">
+            <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#EDFAF5!important;border-bottom:1px solid #9FE1CB!important;">
+              <div style="min-width:36px!important;height:36px!important;background-color:#0F6E56!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">4</div>
+              <div>
+                <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Live Stock Reception</div>
+                <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Receiving stock instantly updates the <strong style="color:#0F6E56!important;">On-Hand HUD</strong> across all POS devices. No manual refresh required.</div>
+              </div>
+            </div>
+            <div style="padding:16px 22px!important;background-color:#FAFAF8!important;">
+              <img src="img_4.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 4">
+            </div>
+          </td>
+        </tr>
 
-      </div>
+        <!-- Row 3: Steps 5 & 6 -->
+        <tr>
+          <td style="width:50%!important;vertical-align:top!important;border:1px solid #E2D9C8!important;border-radius:10px!important;padding:0!important;overflow:hidden!important;">
+            <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#F5F0FF!important;border-bottom:1px solid #CECBF6!important;">
+              <div style="min-width:36px!important;height:36px!important;background-color:#534AB7!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">5</div>
+              <div>
+                <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Upcoming Stock List</div>
+                <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Dashboard to see all <strong style="color:#534AB7!important;">Future Incoming Qty</strong> and confirmed Purchase Orders already on their way.</div>
+              </div>
+            </div>
+            <div style="padding:16px 22px!important;background-color:#FAFAF8!important;">
+              <img src="img_5.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 5">
+            </div>
+          </td>
+          <td style="width:50%!important;vertical-align:top!important;border:1px solid #E2D9C8!important;border-radius:10px!important;padding:0!important;overflow:hidden!important;">
+            <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#F5F4F2!important;border-bottom:1px solid #D4C9B0!important;">
+              <div style="min-width:36px!important;height:36px!important;background-color:#4A4A5A!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">6</div>
+              <div>
+                <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Precise Data Accuracy</div>
+                <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Warehouse-level precision ensures POS team always has the most <strong style="color:#4A4A5A!important;">accurate stock data</strong> for customer assurance.</div>
+              </div>
+            </div>
+            <div style="padding:16px 22px!important;background-color:#FAFAF8!important;">
+              <img src="img_6.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 6">
+            </div>
+          </td>
+        </tr>
+
+      </table>
     </div>
   </div>
 
