@@ -3,273 +3,214 @@
 <head><meta charset="UTF-8"><title>POS Stock Indicator – Odoo</title></head>
 <body style="margin:0;padding:0;background:#F8F6F1;font-family:'Georgia','Times New Roman',serif;">
 
-<!--
-  ════════════════════════════════════════════════════════
-  ODOO APP STORE — DESCRIPTION HTML
-  Copy from <div id="pos-si"> through its closing </div>
-  into the Odoo module description (HTML source view).
-  No <style>, no <link> — 100% inline styles.
-  ════════════════════════════════════════════════════════
--->
+<div id="pos-si" style="font-family:'Georgia','Times New Roman',serif!important;background-color:#F8F6F1!important;color:#1A1A2E!important;border-radius:16px!important;margin-top:16px!important;border:1px solid #D4C9B0!important;">
 
-<div id="pos-si" style="font-family:'Georgia','Times New Roman',serif!important;background-color:#F8F6F1!important;color:#1A1A2E!important;border-radius:16px!important;overflow:hidden!important;margin-top:16px!important;border:1px solid #D4C9B0!important;box-sizing:border-box!important;">
-
-  <!-- ══════════ HERO ══════════ -->
-  <div style="background:linear-gradient(150deg,#1A1A2E 0%,#16213E 50%,#0F3460 100%)!important;padding:64px 48px 56px!important;text-align:center!important;position:relative!important;overflow:hidden!important;">
-
-    <!-- Rainbow top bar -->
-    <div style="position:absolute!important;top:0!important;left:0!important;right:0!important;height:4px!important;background:linear-gradient(90deg,#E8B86D,#E07A5F,#C44D58,#9B5DE5,#3A86FF,#06D6A0)!important;"></div>
-
-    <!-- Decorative circles -->
-    <div style="position:absolute!important;bottom:-60px!important;right:-60px!important;width:220px!important;height:220px!important;border-radius:50%!important;border:1px solid rgba(232,184,109,0.12)!important;pointer-events:none!important;"></div>
-    <div style="position:absolute!important;bottom:-30px!important;right:-30px!important;width:130px!important;height:130px!important;border-radius:50%!important;border:1px solid rgba(232,184,109,0.18)!important;pointer-events:none!important;"></div>
-
-    <div style="max-width:820px!important;margin:0 auto!important;position:relative!important;">
-
-      <!-- Badge -->
-      <div style="display:inline-block!important;background:rgba(232,184,109,0.15)!important;color:#E8B86D!important;padding:6px 20px!important;border-radius:40px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2.5px!important;text-transform:uppercase!important;margin-bottom:22px!important;border:1px solid rgba(232,184,109,0.3)!important;font-family:'Georgia',serif!important;">
+  <!-- HERO -->
+  <div style="background-color:#1A1A2E!important;padding:64px 48px 56px!important;text-align:center!important;border-radius:14px 14px 0 0!important;">
+    <div style="height:4px!important;background-color:#E8B86D!important;margin:-64px -48px 48px -48px!important;border-radius:14px 14px 0 0!important;"></div>
+    <div style="max-width:820px!important;margin:0 auto!important;">
+      <div style="display:inline-block!important;background-color:#2A2A3E!important;color:#E8B86D!important;padding:6px 20px!important;border-radius:40px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2.5px!important;text-transform:uppercase!important;margin-bottom:22px!important;border:1px solid #4A4A5A!important;font-family:'Georgia',serif!important;">
         ✦ &nbsp; Odoo Premium Module
       </div>
-
-      <!-- H1 -->
-      <div style="font-size:2.8rem!important;font-weight:700!important;color:#F5F0E8!important;margin-bottom:16px!important;line-height:1.2!important;letter-spacing:-0.5px!important;font-family:'Georgia',serif!important;">
+      <div style="font-size:2.8rem!important;font-weight:700!important;color:#F5F0E8!important;margin-bottom:16px!important;line-height:1.2!important;font-family:'Georgia',serif!important;">
         Smart Retail: POS Inventory
         <div style="color:#E8B86D!important;font-style:italic!important;font-size:2.4rem!important;font-family:'Georgia',serif!important;">&amp; Auto-Restock</div>
       </div>
-
-      <!-- Subtitle -->
-      <div style="font-size:1.05rem!important;color:rgba(245,240,232,0.75)!important;max-width:680px!important;margin:0 auto 36px!important;line-height:1.75!important;font-family:'Georgia',serif!important;">
+      <div style="font-size:1.05rem!important;color:#B0A898!important;max-width:680px!important;margin:0 auto 36px!important;line-height:1.75!important;font-family:'Georgia',serif!important;">
         Bridging the gap between floor sales and backend procurement — real-time stock visibility with automated vendor fulfillment.
       </div>
-
-      <!-- Stats bar -->
-      <div style="display:flex!important;justify-content:center!important;max-width:540px!important;margin:0 auto!important;border:1px solid rgba(232,184,109,0.2)!important;border-radius:12px!important;overflow:hidden!important;">
-        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid rgba(232,184,109,0.2)!important;">
-          <div style="font-size:2rem!important;font-weight:700!important;color:#E8B86D!important;line-height:1!important;font-family:'Georgia',serif!important;">15%</div>
-          <div style="font-size:0.72rem!important;color:rgba(245,240,232,0.6)!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Lost Sales Recovered</div>
+      <div style="display:flex!important;justify-content:center!important;max-width:540px!important;margin:0 auto!important;border:1px solid #3A3A50!important;border-radius:12px!important;">
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid #3A3A50!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#E8B86D!important;font-family:'Georgia',serif!important;">15%</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Lost Sales Recovered</div>
         </div>
-        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid rgba(232,184,109,0.2)!important;">
-          <div style="font-size:2rem!important;font-weight:700!important;color:#06D6A0!important;line-height:1!important;font-family:'Georgia',serif!important;">100%</div>
-          <div style="font-size:0.72rem!important;color:rgba(245,240,232,0.6)!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Real-Time Sync</div>
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid #3A3A50!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#06D6A0!important;font-family:'Georgia',serif!important;">100%</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Real-Time Sync</div>
         </div>
         <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;">
-          <div style="font-size:2rem!important;font-weight:700!important;color:#C44D58!important;line-height:1!important;font-family:'Georgia',serif!important;">0</div>
-          <div style="font-size:0.72rem!important;color:rgba(245,240,232,0.6)!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Manual PO Splitting</div>
+          <div style="font-size:2rem!important;font-weight:700!important;color:#C44D58!important;font-family:'Georgia',serif!important;">0</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Manual PO Splitting</div>
         </div>
       </div>
-
     </div>
-  </div><!-- /HERO -->
+  </div>
 
-
-  <!-- ══════════ OVERVIEW ══════════ -->
-  <div style="padding:40px!important;background:#F8F6F1!important;">
-    <div style="background:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
+  <!-- OVERVIEW -->
+  <div style="padding:40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
       <div style="display:flex!important;gap:40px!important;align-items:flex-start!important;flex-wrap:wrap!important;">
-
-        <!-- Left text -->
         <div style="flex:2!important;min-width:260px!important;">
           <div style="display:flex!important;align-items:center!important;gap:12px!important;margin-bottom:14px!important;">
-            <div style="width:36px!important;height:36px!important;background:#1A1A2E!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#E8B86D!important;font-size:1.1rem!important;flex-shrink:0!important;">🎯</div>
+            <div style="width:36px!important;height:36px!important;background-color:#1A1A2E!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#E8B86D!important;font-size:1.1rem!important;flex-shrink:0!important;">🎯</div>
             <div style="color:#1A1A2E!important;font-weight:700!important;font-size:0.78rem!important;letter-spacing:2px!important;text-transform:uppercase!important;font-family:'Georgia',serif!important;">Strategic Overview</div>
           </div>
           <div style="font-size:1rem!important;line-height:1.8!important;color:#4A4A5A!important;">
             Retail inventory mismanagement leads to <strong style="color:#C44D58!important;">15% lost sales</strong>. Our <strong style="color:#1A1A2E!important;">POS Product Stock Indicator</strong> connects cashiers directly to the supply chain — delivering real-time On-Hand &amp; Incoming visibility during sales and triggering restocking automatically, keeping you always <strong style="color:#0F6E56!important;">Stock-Ready.</strong>
           </div>
         </div>
-
-        <!-- Right pills -->
         <div style="flex:1!important;min-width:220px!important;display:flex!important;flex-direction:column!important;gap:12px!important;">
-          <div style="background:#F0F7FF!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #3A86FF!important;">
+          <div style="background-color:#F0F7FF!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #3A86FF!important;">
             <div style="color:#0C447C!important;font-weight:700!important;font-size:0.88rem!important;margin-bottom:4px!important;font-family:'Georgia',serif!important;">⚡ Real-Time Sync</div>
             <div style="font-size:0.85rem!important;color:#185FA5!important;line-height:1.5!important;">Instant stock updates across all POS devices — zero delay.</div>
           </div>
-          <div style="background:#EDFAF5!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #06D6A0!important;">
+          <div style="background-color:#EDFAF5!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #06D6A0!important;">
             <div style="color:#085041!important;font-weight:700!important;font-size:0.88rem!important;margin-bottom:4px!important;font-family:'Georgia',serif!important;">🛒 Auto-Restock</div>
             <div style="font-size:0.85rem!important;color:#0F6E56!important;line-height:1.5!important;">Automated vendor-wise PO splitting engine — fully hands-free.</div>
           </div>
         </div>
-
       </div>
     </div>
-  </div><!-- /OVERVIEW -->
+  </div>
 
-
-  <!-- ══════════ CORE CAPABILITIES ══════════ -->
-  <div style="padding:0 40px 40px!important;background:#F8F6F1!important;">
-    <div style="background:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
-
-      <!-- Section header -->
+  <!-- CORE CAPABILITIES -->
+  <div style="padding:0 40px 40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
       <div style="text-align:center!important;margin-bottom:32px!important;">
-        <div style="display:inline-block!important;background:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">What's Inside</div>
+        <div style="display:inline-block!important;background-color:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">What's Inside</div>
         <div style="font-weight:700!important;color:#1A1A2E!important;font-size:1.7rem!important;font-family:'Georgia',serif!important;">Core Capabilities</div>
       </div>
-
-      <!-- Row 1 -->
-      <div style="display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:14px!important;margin-bottom:14px!important;">
-
-        <div style="background:#F0F4FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #C7D4F5!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">📊</div>
+      <!-- Row 1: flex+wrap (grid ni jagye) -->
+      <div style="display:flex!important;flex-wrap:wrap!important;gap:14px!important;margin-bottom:14px!important;">
+        <div style="flex:1!important;min-width:160px!important;background-color:#F0F4FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #C7D4F5!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">📊</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Visual Intelligence</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Color-coded stock badges with dynamic alerts.</div>
         </div>
-
-        <div style="background:#FFF8EC!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F0D9A0!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🎯</div>
+        <div style="flex:1!important;min-width:160px!important;background-color:#FFF8EC!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F0D9A0!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🎯</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">On-Demand Accuracy</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Restocking requests from POS cards instantly.</div>
         </div>
-
-        <div style="background:#EDFAF5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #9FE1CB!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">⚡</div>
+        <div style="flex:1!important;min-width:160px!important;background-color:#EDFAF5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #9FE1CB!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">⚡</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Automated Fulfillment</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Vendor-splitting for rapid PO generation.</div>
         </div>
-
-        <div style="background:#F3EFFE!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #CECBF6!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🔄</div>
+        <div style="flex:1!important;min-width:160px!important;background-color:#F3EFFE!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #CECBF6!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🔄</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Live Sync Engine</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Unified data across Backend and POS.</div>
         </div>
-
       </div>
-
       <!-- Row 2 -->
-      <div style="display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:14px!important;">
-
-        <div style="background:#FEF0F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F4C0D1!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🛒</div>
+      <div style="display:flex!important;flex-wrap:wrap!important;gap:14px!important;">
+        <div style="flex:1!important;min-width:160px!important;background-color:#FEF0F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F4C0D1!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🛒</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Smart Restock Cart</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">POS queue for multi-product floor demands.</div>
         </div>
-
-        <div style="background:#E8F8F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #5DCAA5!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🚛</div>
+        <div style="flex:1!important;min-width:160px!important;background-color:#E8F8F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #5DCAA5!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🚛</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Transit Transparency</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Track confirmed POs and upcoming arrivals.</div>
         </div>
-
-        <div style="background:#F5F0FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #AFA9EC!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🏢</div>
+        <div style="flex:1!important;min-width:160px!important;background-color:#F5F0FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #AFA9EC!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🏢</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Multi-Vendor Logic</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Intelligent mapping for complex procurement.</div>
         </div>
-
-        <div style="background:#FFF8E8!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #FAC775!important;">
-          <div style="width:44px!important;height:44px!important;background:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🏆</div>
+        <div style="flex:1!important;min-width:160px!important;background-color:#FFF8E8!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #FAC775!important;">
+          <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;display:flex!important;align-items:center!important;justify-content:center!important;">🏆</div>
           <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Data Integrity</div>
           <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">High-precision syncing for warehouse ops.</div>
         </div>
-
       </div>
-
     </div>
-  </div><!-- /CAPABILITIES -->
+  </div>
 
-
-  <!-- ══════════ WORKFLOW SHOWCASE ══════════ -->
-  <div style="padding:0 40px 40px!important;background:#F8F6F1!important;">
-    <div style="background:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
-
-      <!-- Section header -->
+  <!-- WORKFLOW SHOWCASE -->
+  <div style="padding:0 40px 40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
       <div style="text-align:center!important;margin-bottom:32px!important;">
-        <div style="display:inline-block!important;background:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">Workflow Showcase</div>
+        <div style="display:inline-block!important;background-color:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">Workflow Showcase</div>
         <div style="font-weight:700!important;color:#1A1A2E!important;font-size:1.7rem!important;margin-bottom:8px!important;font-family:'Georgia',serif!important;">Stock Indicator &amp; Restocking</div>
         <div style="color:#7A7A8A!important;font-size:0.92rem!important;font-style:italic!important;font-family:'Georgia',serif!important;">From POS floor demand to validated inventory fulfillment.</div>
       </div>
-
-      <!-- Steps -->
       <div style="display:flex!important;flex-direction:column!important;gap:16px!important;">
 
-        <!-- Step 1 -->
-        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;overflow:hidden!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background:#FEF5F5!important;border-bottom:1px solid #FADCDC!important;">
-            <div style="min-width:36px!important;height:36px!important;background:#C44D58!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">1</div>
+        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;">
+          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#FEF5F5!important;border-bottom:1px solid #FADCDC!important;border-radius:10px 10px 0 0!important;">
+            <div style="min-width:36px!important;height:36px!important;background-color:#C44D58!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">1</div>
             <div>
               <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Visual Stock Alerts</div>
               <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Low stock triggers a <strong style="color:#C44D58!important;">Red HUD Badge</strong>. Cashiers start restocking by clicking <strong>✦ ON DEMAND</strong> cards immediately.</div>
             </div>
           </div>
-          <div style="padding:16px 22px!important;background:#FAFAF8!important;">
-            <img src="img_1.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 1 – Visual Stock Alerts">
+          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
+            <img src="img_1.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 1">
           </div>
         </div>
 
-        <!-- Step 2 -->
-        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;overflow:hidden!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background:#FFF8EE!important;border-bottom:1px solid #F0D9A0!important;">
-            <div style="min-width:36px!important;height:36px!important;background:#BA7517!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">2</div>
+        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;">
+          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#FFF8EE!important;border-bottom:1px solid #F0D9A0!important;border-radius:10px 10px 0 0!important;">
+            <div style="min-width:36px!important;height:36px!important;background-color:#BA7517!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">2</div>
             <div>
               <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Instant Restock Cart</div>
               <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">A smart <strong style="color:#BA7517!important;">On-Demand Queue</strong> inside POS to validate quantities before confirming the restocking mission.</div>
             </div>
           </div>
-          <div style="padding:16px 22px!important;background:#FAFAF8!important;">
-            <img src="img_2.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 2 – Instant Restock Cart">
+          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
+            <img src="img_2.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 2">
           </div>
         </div>
 
-        <!-- Step 3 -->
-        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;overflow:hidden!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background:#EFF5FF!important;border-bottom:1px solid #C7D4F5!important;">
-            <div style="min-width:36px!important;height:36px!important;background:#185FA5!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">3</div>
+        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;">
+          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#EFF5FF!important;border-bottom:1px solid #C7D4F5!important;border-radius:10px 10px 0 0!important;">
+            <div style="min-width:36px!important;height:36px!important;background-color:#185FA5!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">3</div>
             <div>
               <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Smart PO Splitting</div>
               <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Backend splits orders by primary <strong style="color:#185FA5!important;">Vendors</strong> automatically for clean, organized procurement.</div>
             </div>
           </div>
-          <div style="padding:16px 22px!important;background:#FAFAF8!important;">
-            <img src="img_3.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 3 – Smart PO Splitting">
+          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
+            <img src="img_3.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 3">
           </div>
         </div>
 
-        <!-- Step 4 -->
-        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;overflow:hidden!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background:#EDFAF5!important;border-bottom:1px solid #9FE1CB!important;">
-            <div style="min-width:36px!important;height:36px!important;background:#0F6E56!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">4</div>
+        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;">
+          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#EDFAF5!important;border-bottom:1px solid #9FE1CB!important;border-radius:10px 10px 0 0!important;">
+            <div style="min-width:36px!important;height:36px!important;background-color:#0F6E56!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">4</div>
             <div>
               <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Live Stock Reception</div>
               <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Receiving stock instantly updates the <strong style="color:#0F6E56!important;">On-Hand HUD</strong> across all POS devices. No manual refresh required.</div>
             </div>
           </div>
-          <div style="padding:16px 22px!important;background:#FAFAF8!important;">
-            <img src="img_4.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 4 – Live Stock Reception">
+          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
+            <img src="img_4.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 4">
           </div>
         </div>
 
-        <!-- Step 5 -->
-        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;overflow:hidden!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background:#F5F0FF!important;border-bottom:1px solid #CECBF6!important;">
-            <div style="min-width:36px!important;height:36px!important;background:#534AB7!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">5</div>
+        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;">
+          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#F5F0FF!important;border-bottom:1px solid #CECBF6!important;border-radius:10px 10px 0 0!important;">
+            <div style="min-width:36px!important;height:36px!important;background-color:#534AB7!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">5</div>
             <div>
               <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Upcoming Stock List</div>
               <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Dashboard to see all <strong style="color:#534AB7!important;">Future Incoming Qty</strong> and confirmed Purchase Orders already on their way.</div>
             </div>
           </div>
-          <div style="padding:16px 22px!important;background:#FAFAF8!important;">
-            <img src="img_5.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 5 – Upcoming Stock List">
+          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
+            <img src="img_5.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 5">
           </div>
         </div>
 
-        <!-- Step 6 -->
-        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;overflow:hidden!important;">
-          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background:#F5F4F2!important;border-bottom:1px solid #D4C9B0!important;">
-            <div style="min-width:36px!important;height:36px!important;background:#4A4A5A!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">6</div>
+        <div style="border:1px solid #E2D9C8!important;border-radius:10px!important;">
+          <div style="display:flex!important;align-items:center!important;gap:14px!important;padding:16px 22px!important;background-color:#F5F4F2!important;border-bottom:1px solid #D4C9B0!important;border-radius:10px 10px 0 0!important;">
+            <div style="min-width:36px!important;height:36px!important;background-color:#4A4A5A!important;border-radius:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;flex-shrink:0!important;">6</div>
             <div>
               <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:2px!important;font-family:'Georgia',serif!important;">Precise Data Accuracy</div>
               <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Warehouse-level precision ensures POS team always has the most <strong style="color:#4A4A5A!important;">accurate stock data</strong> for customer assurance.</div>
             </div>
           </div>
-          <div style="padding:16px 22px!important;background:#FAFAF8!important;">
-            <img src="img_6.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 6 – Precise Data Accuracy">
+          <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-radius:0 0 10px 10px!important;">
+            <img src="img_6.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 6">
           </div>
         </div>
 
-      </div><!-- /steps -->
+      </div>
     </div>
-  </div><!-- /WORKFLOW -->
+  </div>
 
-</div><!-- /pos-si -->
-
+</div>
 </body>
 </html>
