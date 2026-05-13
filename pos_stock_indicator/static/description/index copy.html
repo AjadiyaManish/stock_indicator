@@ -1,338 +1,250 @@
-<odoo>
-<section class="oe_container" style="font-family: 'Georgia', 'Times New Roman', serif; background-color: #F8F6F1; border-radius: 16px; overflow: hidden; margin-top: 16px; color: #1A1A2E; border: 1px solid #D4C9B0;">
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>POS Stock Indicator – Odoo</title></head>
+<body style="margin:0;padding:0;background:#F8F6F1;font-family:'Georgia','Times New Roman',serif;">
+
+<div id="pos-si" style="font-family:'Georgia','Times New Roman',serif!important;background-color:#F8F6F1!important;color:#1A1A2E!important;border-radius:16px!important;margin-top:16px!important;border:1px solid #D4C9B0!important;">
 
   <!-- HERO -->
-  <div style="background: linear-gradient(150deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%); padding: 64px 48px 56px; text-align: center; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #E8B86D, #E07A5F, #C44D58, #9B5DE5, #3A86FF, #06D6A0);"></div>
-    <div style="position: absolute; bottom: -60px; right: -60px; width: 220px; height: 220px; border-radius: 50%; border: 1px solid rgba(232,184,109,0.12); pointer-events: none;"></div>
-    <div style="position: absolute; bottom: -30px; right: -30px; width: 130px; height: 130px; border-radius: 50%; border: 1px solid rgba(232,184,109,0.18); pointer-events: none;"></div>
-
-    <div style="max-width: 820px; margin: 0 auto; position: relative;">
-      <span style="display: inline-block; background: rgba(232,184,109,0.15); color: #E8B86D; padding: 6px 18px; border-radius: 40px; font-size: 0.72rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 22px; border: 1px solid rgba(232,184,109,0.3); font-family: 'Georgia', serif;">
+  <div style="background-color:#1A1A2E!important;padding:64px 48px 56px!important;text-align:center!important;border-radius:14px 14px 0 0!important;">
+    <div style="height:4px!important;background-color:#E8B86D!important;margin:-64px -48px 48px -48px!important;border-radius:14px 14px 0 0!important;"></div>
+    <div style="max-width:820px!important;margin:0 auto!important;">
+      <div style="display:inline-block!important;background-color:#2A2A3E!important;color:#E8B86D!important;padding:6px 20px!important;border-radius:40px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2.5px!important;text-transform:uppercase!important;margin-bottom:22px!important;border:1px solid #4A4A5A!important;font-family:'Georgia',serif!important;">
         ✦ &nbsp; Odoo Premium Module
-      </span>
-
-      <h1 style="font-size: 2.8rem; font-weight: 700; color: #F5F0E8; margin-bottom: 16px; line-height: 1.2; letter-spacing: -0.5px;">
+      </div>
+      <div style="font-size:2.8rem!important;font-weight:700!important;color:#F5F0E8!important;margin-bottom:16px!important;line-height:1.2!important;font-family:'Georgia',serif!important;">
         Smart Retail: POS Inventory
-        <span style="display: block; color: #E8B86D; font-style: italic; font-size: 2.4rem;">&amp; Auto-Restock</span>
-      </h1>
-
-      <p style="font-size: 1.05rem; color: rgba(245,240,232,0.75); max-width: 680px; margin: 0 auto 36px; line-height: 1.75; font-family: 'Georgia', serif;">
+        <div style="color:#E8B86D!important;font-style:italic!important;font-size:2.4rem!important;font-family:'Georgia',serif!important;">&amp; Auto-Restock</div>
+      </div>
+      <div style="font-size:1.05rem!important;color:#B0A898!important;max-width:680px!important;margin:0 auto 36px!important;line-height:1.75!important;font-family:'Georgia',serif!important;">
         Bridging the gap between floor sales and backend procurement — real-time stock visibility with automated vendor fulfillment.
-      </p>
-
-      <!-- 3 Stats -->
-      <div style="display: flex; justify-content: center; gap: 0; max-width: 540px; margin: 0 auto; border: 1px solid rgba(232,184,109,0.2); border-radius: 12px; overflow: hidden;">
-        <div style="flex: 1; padding: 20px 16px; text-align: center; border-right: 1px solid rgba(232,184,109,0.2);">
-          <div style="font-size: 2rem; font-weight: 700; color: #E8B86D; line-height: 1; font-family: 'Georgia', serif;">15%</div>
-          <div style="font-size: 0.72rem; color: rgba(245,240,232,0.6); margin-top: 5px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Georgia', serif;">Lost Sales Recovered</div>
+      </div>
+      <div style="display:flex!important;justify-content:center!important;max-width:540px!important;margin:0 auto!important;border:1px solid #3A3A50!important;border-radius:12px!important;">
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid #3A3A50!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#E8B86D!important;font-family:'Georgia',serif!important;">15%</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Lost Sales Recovered</div>
         </div>
-        <div style="flex: 1; padding: 20px 16px; text-align: center; border-right: 1px solid rgba(232,184,109,0.2);">
-          <div style="font-size: 2rem; font-weight: 700; color: #06D6A0; line-height: 1; font-family: 'Georgia', serif;">100%</div>
-          <div style="font-size: 0.72rem; color: rgba(245,240,232,0.6); margin-top: 5px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Georgia', serif;">Real-Time Sync</div>
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid #3A3A50!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#06D6A0!important;font-family:'Georgia',serif!important;">100%</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Real-Time Sync</div>
         </div>
-        <div style="flex: 1; padding: 20px 16px; text-align: center;">
-          <div style="font-size: 2rem; font-weight: 700; color: #C44D58; line-height: 1; font-family: 'Georgia', serif;">0</div>
-          <div style="font-size: 0.72rem; color: rgba(245,240,232,0.6); margin-top: 5px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Georgia', serif;">Manual PO Splitting</div>
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#C44D58!important;font-family:'Georgia',serif!important;">0</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Manual PO Splitting</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- OVERVIEW -->
-  <div style="padding: 40px 40px 32px; background: #F8F6F1;">
-    <div style="background: #FFFFFF; border-radius: 14px; padding: 36px 40px; border: 1px solid #E2D9C8; display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
-      <div style="flex: 2; min-width: 260px;">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
-          <div style="width: 36px; height: 36px; background: #1A1A2E; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #E8B86D; font-size: 1rem; flex-shrink: 0;">
-            <i class="fa fa-bullseye"></i>
-          </div>
-          <h3 style="color: #1A1A2E; font-weight: 700; font-size: 0.78rem; margin: 0; letter-spacing: 2px; text-transform: uppercase; font-family: 'Georgia', serif;">Strategic Overview</h3>
-        </div>
-        <p style="font-size: 1rem; line-height: 1.8; color: #4A4A5A; margin: 0;">
-          Retail inventory mismanagement leads to <strong style="color: #C44D58;">15% lost sales</strong>. Our <strong style="color: #1A1A2E;">POS Product Stock Indicator</strong> connects cashiers directly to the supply chain — delivering real-time On-Hand &amp; Incoming visibility during sales and triggering restocking automatically, keeping you always <strong style="color: #0F6E56;">Stock-Ready.</strong>
-        </p>
-      </div>
-      <div style="flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: 12px;">
-        <div style="background: #F0F7FF; padding: 16px 20px; border-radius: 10px; border-left: 3px solid #3A86FF;">
-          <h4 style="color: #0C447C; margin: 0 0 4px 0; font-weight: 700; font-size: 0.88rem; font-family: 'Georgia', serif;"><i class="fa fa-bolt" style="margin-right: 8px;"></i>Real-Time Sync</h4>
-          <p style="font-size: 0.85rem; color: #185FA5; margin: 0; line-height: 1.5;">Instant stock updates across all POS devices — zero delay.</p>
-        </div>
-        <div style="background: #EDFAF5; padding: 16px 20px; border-radius: 10px; border-left: 3px solid #06D6A0;">
-          <h4 style="color: #085041; margin: 0 0 4px 0; font-weight: 700; font-size: 0.88rem; font-family: 'Georgia', serif;"><i class="fa fa-shopping-cart" style="margin-right: 8px;"></i>Auto-Restock</h4>
-          <p style="font-size: 0.85rem; color: #0F6E56; margin: 0; line-height: 1.5;">Automated vendor-wise PO splitting engine — fully hands-free.</p>
-        </div>
-      </div>
+  <div style="padding:40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
+      <table style="width:100%!important;border-collapse:collapse!important;">
+        <tr>
+          <!-- Left: text -->
+          <td style="width:65%!important;padding-right:32px!important;vertical-align:top!important;">
+            <table style="border-collapse:collapse!important;margin-bottom:14px!important;">
+              <tr>
+                <td style="width:36px!important;height:36px!important;background-color:#1A1A2E!important;border-radius:8px!important;text-align:center!important;vertical-align:middle!important;font-size:1.1rem!important;padding:6px!important;">🎯</td>
+                <td style="padding-left:12px!important;vertical-align:middle!important;color:#1A1A2E!important;font-weight:700!important;font-size:0.78rem!important;letter-spacing:2px!important;text-transform:uppercase!important;font-family:'Georgia',serif!important;">Strategic Overview</td>
+              </tr>
+            </table>
+            <div style="font-size:1rem!important;line-height:1.8!important;color:#4A4A5A!important;">
+              Retail inventory mismanagement leads to <strong style="color:#C44D58!important;">15% lost sales</strong>. Our <strong style="color:#1A1A2E!important;">POS Product Stock Indicator</strong> connects cashiers directly to the supply chain — delivering real-time On-Hand &amp; Incoming visibility during sales and triggering restocking automatically, keeping you always <strong style="color:#0F6E56!important;">Stock-Ready.</strong>
+            </div>
+          </td>
+          <!-- Right: feature boxes -->
+          <td style="width:35%!important;vertical-align:top!important;">
+            <div style="background-color:#F0F7FF!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #3A86FF!important;margin-bottom:12px!important;">
+              <div style="color:#0C447C!important;font-weight:700!important;font-size:0.88rem!important;margin-bottom:4px!important;font-family:'Georgia',serif!important;">⚡ Real-Time Sync</div>
+              <div style="font-size:0.85rem!important;color:#185FA5!important;line-height:1.5!important;">Instant stock updates across all POS devices — zero delay.</div>
+            </div>
+            <div style="background-color:#EDFAF5!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #06D6A0!important;">
+              <div style="color:#085041!important;font-weight:700!important;font-size:0.88rem!important;margin-bottom:4px!important;font-family:'Georgia',serif!important;">🛒 Auto-Restock</div>
+              <div style="font-size:0.85rem!important;color:#0F6E56!important;line-height:1.5!important;">Automated vendor-wise PO splitting engine — fully hands-free.</div>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 
   <!-- CORE CAPABILITIES -->
-  <div style="padding: 0 40px 40px; background: #F8F6F1;">
-    <div style="background: #FFFFFF; border-radius: 14px; padding: 36px 40px; border: 1px solid #E2D9C8;">
-      <div style="text-align: center; margin-bottom: 32px;">
-        <span style="display: inline-block; background: #F3EFE8; color: #6B5B3E; padding: 5px 16px; border-radius: 30px; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #D4C9B0; margin-bottom: 10px; font-family: 'Georgia', serif;">What's Inside</span>
-        <h2 style="font-weight: 700; color: #1A1A2E; font-size: 1.7rem; margin: 0; font-family: 'Georgia', serif;">Core Capabilities</h2>
+  <div style="padding:0 40px 40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
+      <div style="text-align:center!important;margin-bottom:32px!important;">
+        <div style="display:inline-block!important;background-color:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">What's Inside</div>
+        <div style="font-weight:700!important;color:#1A1A2E!important;font-size:1.7rem!important;font-family:'Georgia',serif!important;">Core Capabilities</div>
       </div>
-
-      <!-- Row 1 of 4 capabilities -->
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 14px;">
-        <div style="background: #F0F4FF; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #C7D4F5;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #E8B86D; margin: 0 auto 12px;">
-            <i class="fa fa-bar-chart"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">Visual Intelligence</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Color-coded stock badges with dynamic alerts.</p>
-        </div>
-        <div style="background: #FFF8EC; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #F0D9A0;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #E8B86D; margin: 0 auto 12px;">
-            <i class="fa fa-crosshairs"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">On-Demand Accuracy</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Restocking requests from POS cards instantly.</p>
-        </div>
-        <div style="background: #EDFAF5; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #9FE1CB;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #06D6A0; margin: 0 auto 12px;">
-            <i class="fa fa-bolt"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">Automated Fulfillment</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Vendor-splitting for rapid PO generation.</p>
-        </div>
-        <div style="background: #F3EFFE; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #CECBF6;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #9B5DE5; margin: 0 auto 12px;">
-            <i class="fa fa-refresh"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">Live Sync Engine</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Unified data across Backend and POS.</p>
-        </div>
-      </div>
-
-      <!-- Row 2 of 4 capabilities -->
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
-        <div style="background: #FEF0F5; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #F4C0D1;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #C44D58; margin: 0 auto 12px;">
-            <i class="fa fa-shopping-cart"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">Smart Restock Cart</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">POS queue for multi-product floor demands.</p>
-        </div>
-        <div style="background: #E8F8F5; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #5DCAA5;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #06D6A0; margin: 0 auto 12px;">
-            <i class="fa fa-truck"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">Transit Transparency</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Track confirmed POs and upcoming arrivals.</p>
-        </div>
-        <div style="background: #F5F0FF; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #AFA9EC;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #9B5DE5; margin: 0 auto 12px;">
-            <i class="fa fa-building"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">Multi-Vendor Logic</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Intelligent mapping for complex procurement.</p>
-        </div>
-        <div style="background: #FFF8E8; padding: 22px 18px; border-radius: 10px; text-align: center; border: 1px solid #FAC775;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 50%; line-height: 44px; font-size: 1.1rem; color: #E8B86D; margin: 0 auto 12px;">
-            <i class="fa fa-trophy"></i>
-          </div>
-          <h5 style="font-weight: 700; color: #1A1A2E; font-size: 0.88rem; margin-bottom: 6px; font-family: 'Georgia', serif;">Data Integrity</h5>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">High-precision syncing for warehouse ops.</p>
-        </div>
-      </div>
+      <table style="width:100%!important;border-collapse:separate!important;border-spacing:14px!important;">
+        <tr>
+          <td style="width:25%!important;background-color:#F0F4FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #C7D4F5!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">📊</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Visual Intelligence</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Color-coded stock badges with dynamic alerts.</div>
+          </td>
+          <td style="width:25%!important;background-color:#FFF8EC!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F0D9A0!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🎯</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">On-Demand Accuracy</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Restocking requests from POS cards instantly.</div>
+          </td>
+          <td style="width:25%!important;background-color:#EDFAF5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #9FE1CB!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">⚡</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Automated Fulfillment</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Vendor-splitting for rapid PO generation.</div>
+          </td>
+          <td style="width:25%!important;background-color:#F3EFFE!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #CECBF6!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🔄</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Live Sync Engine</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Unified data across Backend and POS.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:25%!important;background-color:#FEF0F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F4C0D1!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🛒</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Smart Restock Cart</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">POS queue for multi-product floor demands.</div>
+          </td>
+          <td style="width:25%!important;background-color:#E8F8F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #5DCAA5!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🚛</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Transit Transparency</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Track confirmed POs and upcoming arrivals.</div>
+          </td>
+          <td style="width:25%!important;background-color:#F5F0FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #AFA9EC!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🏢</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Multi-Vendor Logic</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Intelligent mapping for complex procurement.</div>
+          </td>
+          <td style="width:25%!important;background-color:#FFF8E8!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #FAC775!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🏆</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Data Integrity</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">High-precision syncing for warehouse ops.</div>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 
-  <!-- WORKFLOW SHOWCASE -->
-  <div style="padding: 0 40px 40px; background: #F8F6F1;">
-    <div style="background: #FFFFFF; border-radius: 14px; padding: 36px 40px; border: 1px solid #E2D9C8;">
-      <div style="text-align: center; margin-bottom: 32px;">
-        <span style="display: inline-block; background: #F3EFE8; color: #6B5B3E; padding: 5px 16px; border-radius: 30px; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #D4C9B0; margin-bottom: 10px; font-family: 'Georgia', serif;">Workflow Showcase</span>
-        <h2 style="font-weight: 700; color: #1A1A2E; font-size: 1.7rem; margin: 0 0 8px; font-family: 'Georgia', serif;">Stock Indicator &amp; Restocking</h2>
-        <p style="color: #7A7A8A; font-size: 0.92rem; margin: 0; font-family: 'Georgia', serif; font-style: italic;">From POS floor demand to validated inventory fulfillment.</p>
+  <!-- WORKFLOW SHOWCASE — SINGLE COLUMN -->
+  <div style="padding:0 40px 40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
+      <div style="text-align:center!important;margin-bottom:32px!important;">
+        <div style="display:inline-block!important;background-color:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">Workflow Showcase</div>
+        <div style="font-weight:700!important;color:#1A1A2E!important;font-size:1.7rem!important;margin-bottom:8px!important;font-family:'Georgia',serif!important;">Stock Indicator &amp; Restocking</div>
+        <div style="color:#7A7A8A!important;font-size:0.92rem!important;font-style:italic!important;font-family:'Georgia',serif!important;">From POS floor demand to validated inventory fulfillment.</div>
       </div>
 
-      <!-- Steps - compact 2-column layout -->
-      <div style="display: flex; flex-direction: column; gap: 16px;">
-
-        <!-- Step 1 -->
-        <div style="border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 14px; padding: 16px 22px; background: #FEF5F5; border-bottom: 1px solid #FADCDC;">
-            <div style="min-width: 36px; height: 36px; background: #C44D58; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 1rem; font-family: 'Georgia', serif;">1</div>
-            <div>
-              <h4 style="color: #1A1A2E; font-weight: 700; font-size: 1rem; margin: 0 0 2px; font-family: 'Georgia', serif;">Visual Stock Alerts</h4>
-              <p style="color: #7A7A8A; font-size: 0.85rem; margin: 0; line-height: 1.5;">Low stock triggers a <strong style="color: #C44D58;">Red HUD Badge</strong>. Cashiers start restocking by clicking <strong>✦ ON DEMAND</strong> cards immediately.</p>
-            </div>
-          </div>
-          <div style="padding: 16px 22px; background: #FAFAF8;">
-            <img src="img_1.png" style="width: 100%; border-radius: 8px; border: 1px solid #E2D9C8; display: block;" alt="Step 1 – Visual Stock Alerts">
-          </div>
+      <!-- Step 1 -->
+      <div style="border:1px solid #FADCDC!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#FEF5F5!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#C44D58!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">1</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Visual Stock Alerts</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Low stock triggers a <strong style="color:#C44D58!important;">Red HUD Badge</strong>. Cashiers start restocking by clicking <strong>✦ ON DEMAND</strong> cards immediately.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #FADCDC!important;">
+          <img src="img_1.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 1">
         </div>
-
-        <!-- Step 2 -->
-        <div style="border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 14px; padding: 16px 22px; background: #FFF8EE; border-bottom: 1px solid #F0D9A0;">
-            <div style="min-width: 36px; height: 36px; background: #BA7517; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 1rem; font-family: 'Georgia', serif;">2</div>
-            <div>
-              <h4 style="color: #1A1A2E; font-weight: 700; font-size: 1rem; margin: 0 0 2px; font-family: 'Georgia', serif;">Instant Restock Cart</h4>
-              <p style="color: #7A7A8A; font-size: 0.85rem; margin: 0; line-height: 1.5;">A smart <strong style="color: #BA7517;">On-Demand Queue</strong> inside POS to validate quantities before confirming the restocking mission.</p>
-            </div>
-          </div>
-          <div style="padding: 16px 22px; background: #FAFAF8;">
-            <img src="img_2.png" style="width: 100%; border-radius: 8px; border: 1px solid #E2D9C8; display: block;" alt="Step 2 – Instant Restock Cart">
-          </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div style="border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 14px; padding: 16px 22px; background: #EFF5FF; border-bottom: 1px solid #C7D4F5;">
-            <div style="min-width: 36px; height: 36px; background: #185FA5; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 1rem; font-family: 'Georgia', serif;">3</div>
-            <div>
-              <h4 style="color: #1A1A2E; font-weight: 700; font-size: 1rem; margin: 0 0 2px; font-family: 'Georgia', serif;">Smart PO Splitting</h4>
-              <p style="color: #7A7A8A; font-size: 0.85rem; margin: 0; line-height: 1.5;">Backend splits orders by primary <strong style="color: #185FA5;">Vendors</strong> automatically for clean, organized procurement.</p>
-            </div>
-          </div>
-          <div style="padding: 16px 22px; background: #FAFAF8;">
-            <img src="img_3.png" style="width: 100%; border-radius: 8px; border: 1px solid #E2D9C8; display: block;" alt="Step 3 – Smart PO Splitting">
-          </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div style="border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 14px; padding: 16px 22px; background: #EDFAF5; border-bottom: 1px solid #9FE1CB;">
-            <div style="min-width: 36px; height: 36px; background: #0F6E56; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 1rem; font-family: 'Georgia', serif;">4</div>
-            <div>
-              <h4 style="color: #1A1A2E; font-weight: 700; font-size: 1rem; margin: 0 0 2px; font-family: 'Georgia', serif;">Live Stock Reception</h4>
-              <p style="color: #7A7A8A; font-size: 0.85rem; margin: 0; line-height: 1.5;">Receiving stock instantly updates the <strong style="color: #0F6E56;">On-Hand HUD</strong> across all POS devices. No manual refresh required.</p>
-            </div>
-          </div>
-          <div style="padding: 16px 22px; background: #FAFAF8;">
-            <img src="img_4.png" style="width: 100%; border-radius: 8px; border: 1px solid #E2D9C8; display: block;" alt="Step 4 – Live Stock Reception">
-          </div>
-        </div>
-
-        <!-- Step 5 -->
-        <div style="border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 14px; padding: 16px 22px; background: #F5F0FF; border-bottom: 1px solid #CECBF6;">
-            <div style="min-width: 36px; height: 36px; background: #534AB7; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 1rem; font-family: 'Georgia', serif;">5</div>
-            <div>
-              <h4 style="color: #1A1A2E; font-weight: 700; font-size: 1rem; margin: 0 0 2px; font-family: 'Georgia', serif;">Upcoming Stock List</h4>
-              <p style="color: #7A7A8A; font-size: 0.85rem; margin: 0; line-height: 1.5;">Dashboard to see all <strong style="color: #534AB7;">Future Incoming Qty</strong> and confirmed Purchase Orders already on their way.</p>
-            </div>
-          </div>
-          <div style="padding: 16px 22px; background: #FAFAF8;">
-            <img src="img_5.png" style="width: 100%; border-radius: 8px; border: 1px solid #E2D9C8; display: block;" alt="Step 5 – Upcoming Stock List">
-          </div>
-        </div>
-
-        <!-- Step 6 -->
-        <div style="border: 1px solid #E2D9C8; border-radius: 10px; overflow: hidden;">
-          <div style="display: flex; align-items: center; gap: 14px; padding: 16px 22px; background: #F5F4F2; border-bottom: 1px solid #D4C9B0;">
-            <div style="min-width: 36px; height: 36px; background: #4A4A5A; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 1rem; font-family: 'Georgia', serif;">6</div>
-            <div>
-              <h4 style="color: #1A1A2E; font-weight: 700; font-size: 1rem; margin: 0 0 2px; font-family: 'Georgia', serif;">Precise Data Accuracy</h4>
-              <p style="color: #7A7A8A; font-size: 0.85rem; margin: 0; line-height: 1.5;">Warehouse-level precision ensures POS team always has the most <strong style="color: #4A4A5A;">accurate stock data</strong> for customer assurance.</p>
-            </div>
-          </div>
-          <div style="padding: 16px 22px; background: #FAFAF8;">
-            <img src="img_6.png" style="width: 100%; border-radius: 8px; border: 1px solid #E2D9C8; display: block;" alt="Step 6 – Precise Data Accuracy">
-          </div>
-        </div>
-
       </div>
+
+      <!-- Step 2 -->
+      <div style="border:1px solid #F0D9A0!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#FFF8EE!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#BA7517!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">2</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Instant Restock Cart</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">A smart <strong style="color:#BA7517!important;">On-Demand Queue</strong> inside POS to validate quantities before confirming the restocking mission.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #F0D9A0!important;">
+          <img src="img_2.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 2">
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div style="border:1px solid #C7D4F5!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#EFF5FF!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#185FA5!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">3</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Smart PO Splitting</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Backend splits orders by primary <strong style="color:#185FA5!important;">Vendors</strong> automatically for clean, organized procurement.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #C7D4F5!important;">
+          <img src="img_3.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 3">
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div style="border:1px solid #9FE1CB!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#EDFAF5!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#0F6E56!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">4</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Live Stock Reception</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Receiving stock instantly updates the <strong style="color:#0F6E56!important;">On-Hand HUD</strong> across all POS devices. No manual refresh required.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #9FE1CB!important;">
+          <img src="img_4.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 4">
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div style="border:1px solid #CECBF6!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#F5F0FF!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#534AB7!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">5</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Upcoming Stock List</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Dashboard to see all <strong style="color:#534AB7!important;">Future Incoming Qty</strong> and confirmed Purchase Orders already on their way.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #CECBF6!important;">
+          <img src="img_5.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 5">
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div style="border:1px solid #D4C9B0!important;border-radius:10px!important;margin-bottom:0!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#F5F4F2!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#4A4A5A!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">6</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Precise Data Accuracy</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Warehouse-level precision ensures POS team always has the most <strong style="color:#4A4A5A!important;">accurate stock data</strong> for customer assurance.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #D4C9B0!important;">
+          <img src="img_6.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 6">
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <!-- WHY UPSTACKERS -->
-  <div style="padding: 0 40px 40px; background: #F8F6F1;">
-    <div style="background: #FFFFFF; border-radius: 14px; padding: 36px 40px; border: 1px solid #E2D9C8;">
-      <div style="text-align: center; margin-bottom: 28px;">
-        <span style="display: inline-block; background: #FFF8E8; color: #6B5B3E; padding: 5px 16px; border-radius: 30px; font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #F0D9A0; margin-bottom: 10px; font-family: 'Georgia', serif;">Our Commitment</span>
-        <h2 style="font-weight: 700; color: #1A1A2E; font-size: 1.7rem; margin: 0 0 8px; font-family: 'Georgia', serif;">Why Upstackers Technologies?</h2>
-        <p style="color: #7A7A8A; font-size: 0.92rem; font-style: italic; font-family: 'Georgia', serif; margin: 0;">Expertly crafted solutions that transform complex retail logistics into seamless digital workflows.</p>
-      </div>
-
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
-        <div style="background: #F0F4FF; padding: 24px 18px; border-radius: 10px; text-align: center; border: 1px solid #C7D4F5;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 10px; line-height: 44px; font-size: 1.1rem; color: #3A86FF; margin: 0 auto 14px;">
-            <i class="fa fa-shield"></i>
-          </div>
-          <h4 style="font-weight: 700; color: #1A1A2E; margin-bottom: 6px; font-size: 0.92rem; font-family: 'Georgia', serif;">Enterprise Build</h4>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Reliability for high-volume retailers.</p>
-        </div>
-        <div style="background: #FFF8EC; padding: 24px 18px; border-radius: 10px; text-align: center; border: 1px solid #F0D9A0;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 10px; line-height: 44px; font-size: 1.1rem; color: #E8B86D; margin: 0 auto 14px;">
-            <i class="fa fa-diamond"></i>
-          </div>
-          <h4 style="font-weight: 700; color: #1A1A2E; margin-bottom: 6px; font-size: 0.92rem; font-family: 'Georgia', serif;">Smart UI/UX</h4>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Design that eliminates staff training.</p>
-        </div>
-        <div style="background: #EDFAF5; padding: 24px 18px; border-radius: 10px; text-align: center; border: 1px solid #9FE1CB;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 10px; line-height: 44px; font-size: 1.1rem; color: #06D6A0; margin: 0 auto 14px;">
-            <i class="fa fa-cogs"></i>
-          </div>
-          <h4 style="font-weight: 700; color: #1A1A2E; margin-bottom: 6px; font-size: 0.92rem; font-family: 'Georgia', serif;">Native Logic</h4>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Seamlessly integrates with Odoo Core.</p>
-        </div>
-        <div style="background: #FEF0F5; padding: 24px 18px; border-radius: 10px; text-align: center; border: 1px solid #F4C0D1;">
-          <div style="width: 44px; height: 44px; background: #1A1A2E; border-radius: 10px; line-height: 44px; font-size: 1.1rem; color: #C44D58; margin: 0 auto 14px;">
-            <i class="fa fa-users"></i>
-          </div>
-          <h4 style="font-weight: 700; color: #1A1A2E; margin-bottom: 6px; font-size: 0.92rem; font-family: 'Georgia', serif;">Expert Support</h4>
-          <p style="font-size: 0.8rem; color: #4A4A5A; line-height: 1.55; margin: 0;">Direct access to our senior architects.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer style="background: #1A1A2E; margin: 0; padding: 0;">
-    <div style="height: 3px; background: linear-gradient(90deg, #E8B86D, #E07A5F, #C44D58, #9B5DE5, #3A86FF, #06D6A0);"></div>
-    <div style="padding: 44px 40px 28px;">
-      <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 36px;">
-        <!-- Brand -->
-        <div style="flex: 2; min-width: 220px;">
-          <h3 style="color: #F5F0E8; font-size: 1.2rem; font-weight: 700; margin: 0 0 10px; font-family: 'Georgia', serif;">
-            Upstackers <span style="color: #E8B86D; font-style: italic;">Technologies</span>
-          </h3>
-          <p style="color: #8A8A9A; font-size: 0.88rem; line-height: 1.7; margin: 0 0 20px; max-width: 280px; font-family: 'Georgia', serif;">
-            Crafting premium Odoo experiences with precision — blending performance with high-end design.
-          </p>
-          <div style="display: flex; gap: 8px;">
-            <a href="https://www.facebook.com/upstackers/" target="_blank" style="width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 8px; background: rgba(255,255,255,0.06); color: #8A8A9A; text-decoration: none; border: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; display: inline-block;"><i class="fa fa-facebook"></i></a>
-            <a href="https://in.linkedin.com/company/upstackers" target="_blank" style="width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 8px; background: rgba(255,255,255,0.06); color: #8A8A9A; text-decoration: none; border: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; display: inline-block;"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/upstackers" target="_blank" style="width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 8px; background: rgba(255,255,255,0.06); color: #8A8A9A; text-decoration: none; border: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; display: inline-block;"><i class="fa fa-instagram"></i></a>
-          </div>
-        </div>
-        <!-- Products -->
-        <div style="flex: 1; min-width: 150px;">
-          <h4 style="color: #E8B86D; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 18px; font-family: 'Georgia', serif;">Products</h4>
-          <div style="display: flex; flex-direction: column; gap: 10px;">
-            <a href="https://apps.odoo.com/apps/modules/browse?author=Upstackers%20Technologies" target="_blank" style="color: #8A8A9A; text-decoration: none; font-size: 0.88rem; font-family: 'Georgia', serif;"><i class="fa fa-arrow-right" style="color: #3A86FF; margin-right: 8px; font-size: 0.75rem;"></i>Odoo Modules</a>
-            <a href="https://apps.odoo.com/apps/themes/browse?author=Upstackers%20Technologies" target="_blank" style="color: #8A8A9A; text-decoration: none; font-size: 0.88rem; font-family: 'Georgia', serif;"><i class="fa fa-arrow-right" style="color: #3A86FF; margin-right: 8px; font-size: 0.75rem;"></i>Custom Themes</a>
-            <a href="https://www.upstackers.com/services" target="_blank" style="color: #8A8A9A; text-decoration: none; font-size: 0.88rem; font-family: 'Georgia', serif;"><i class="fa fa-arrow-right" style="color: #3A86FF; margin-right: 8px; font-size: 0.75rem;"></i>Enterprise Solutions</a>
-          </div>
-        </div>
-        <!-- Contact -->
-        <div style="flex: 1; min-width: 200px;">
-          <h4 style="color: #E8B86D; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 18px; font-family: 'Georgia', serif;">Get in Touch</h4>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <div style="background: rgba(255,255,255,0.04); padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.07);">
-              <a href="mailto:info@upstackers.com" style="color: #8A8A9A; text-decoration: none; font-size: 0.85rem; font-family: 'Georgia', serif;"><i class="fa fa-envelope" style="color: #3A86FF; margin-right: 8px;"></i>info@upstackers.com</a>
-            </div>
-            <div style="background: rgba(255,255,255,0.04); padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.07);">
-              <span style="color: #8A8A9A; font-size: 0.85rem; font-family: 'Georgia', serif;"><i class="fa fa-phone" style="color: #3A86FF; margin-right: 8px;"></i>+91 97129 82522</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Bottom bar -->
-      <div style="border-top: 1px solid rgba(255,255,255,0.07); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-        <p style="color: #5A5A6A; font-size: 0.82rem; margin: 0; font-family: 'Georgia', serif;">&copy; 2026 <strong style="color: #8A8A9A;">Upstackers Technologies</strong>. All rights reserved.</p>
-        <div style="display: flex; gap: 20px;">
-          <a href="https://www.upstackers.com/privacy" target="_blank" style="color: #E8B86D; text-decoration: none; font-size: 0.82rem; font-family: 'Georgia', serif;">Privacy</a>
-          <a href="https://www.upstackers.com/terms" target="_blank" style="color: #E8B86D; text-decoration: none; font-size: 0.82rem; font-family: 'Georgia', serif;">Terms</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</section>
-</odoo>
+</div>
+</body>
+</html>
