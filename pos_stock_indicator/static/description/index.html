@@ -1,147 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Clipboard History Manager – Odoo</title></head>
-<body style="margin:0!important;padding:0!important;background-color:#F5F5F5!important;font-family:Arial,sans-serif!important;">
+<head><meta charset="UTF-8"><title>POS Stock Indicator – Odoo</title></head>
+<body style="margin:0;padding:0;background:#F8F6F1;font-family:'Georgia','Times New Roman',serif;">
 
-<div style="font-family:Arial,sans-serif!important;background-color:#F5F5F5!important;color:#2C2640!important;border-radius:0!important;">
+<div id="pos-si" style="font-family:'Georgia','Times New Roman',serif!important;background-color:#F8F6F1!important;color:#1A1A2E!important;border-radius:16px!important;margin-top:16px!important;border:1px solid #D4C9B0!important;">
 
-  <!-- ═══ HERO — solid #714B67 (Odoo purple) ═══ -->
-  <div style="background-color:#714B67!important;padding:0!important;text-align:center!important;">
-    <!-- gold top bar -->
-    <div style="background-color:#E9A53A!important;height:5px!important;width:100%!important;display:block!important;font-size:0!important;line-height:0!important;">&nbsp;</div>
-
-    <div style="padding:52px 40px 44px!important;text-align:center!important;">
-      <!-- badge -->
-      <div style="display:inline-block!important;background-color:#5C3B54!important;color:#FFD9F0!important;padding:5px 18px!important;border-radius:40px!important;font-size:11px!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;margin-bottom:20px!important;border:1px solid #7A5570!important;">
+  <!-- HERO -->
+  <div style="background-color:#1A1A2E!important;padding:64px 48px 56px!important;text-align:center!important;border-radius:14px 14px 0 0!important;">
+    <div style="height:4px!important;background-color:#E8B86D!important;margin:-64px -48px 48px -48px!important;border-radius:14px 14px 0 0!important;"></div>
+    <div style="max-width:820px!important;margin:0 auto!important;">
+      <div style="display:inline-block!important;background-color:#2A2A3E!important;color:#E8B86D!important;padding:6px 20px!important;border-radius:40px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2.5px!important;text-transform:uppercase!important;margin-bottom:22px!important;border:1px solid #4A4A5A!important;font-family:'Georgia',serif!important;">
         ✦ &nbsp; Odoo Premium Module
       </div>
-
-      <!-- title -->
-      <div style="font-size:40px!important;font-weight:900!important;color:#FFFFFF!important;line-height:1.2!important;margin-bottom:8px!important;font-family:Arial,sans-serif!important;">
-        Clipboard History Manager
+      <div style="font-size:2.8rem!important;font-weight:700!important;color:#F5F0E8!important;margin-bottom:16px!important;line-height:1.2!important;font-family:'Georgia',serif!important;">
+        Smart Retail: POS Inventory
+        <div style="color:#E8B86D!important;font-style:italic!important;font-size:2.4rem!important;font-family:'Georgia',serif!important;">&amp; Auto-Restock</div>
       </div>
-      <div style="font-size:24px!important;font-weight:700!important;color:#F9D8EF!important;font-style:italic!important;margin-bottom:16px!important;">
-        &amp; Smart Bookmarks
+      <div style="font-size:1.05rem!important;color:#B0A898!important;max-width:680px!important;margin:0 auto 36px!important;line-height:1.75!important;font-family:'Georgia',serif!important;">
+        Bridging the gap between floor sales and backend procurement — real-time stock visibility with automated vendor fulfillment.
       </div>
-      <div style="font-size:15px!important;color:#EDD9E6!important;max-width:580px!important;margin:0 auto 36px!important;line-height:1.75!important;">
-        Never lose copied text again — auto-capture, search, bookmark, and re-use clipboard content across all Odoo modules with one click.
+      <div style="display:flex!important;justify-content:center!important;max-width:540px!important;margin:0 auto!important;border:1px solid #3A3A50!important;border-radius:12px!important;">
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid #3A3A50!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#E8B86D!important;font-family:'Georgia',serif!important;">15%</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Lost Sales Recovered</div>
+        </div>
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;border-right:1px solid #3A3A50!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#06D6A0!important;font-family:'Georgia',serif!important;">100%</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Real-Time Sync</div>
+        </div>
+        <div style="flex:1!important;padding:20px 16px!important;text-align:center!important;">
+          <div style="font-size:2rem!important;font-weight:700!important;color:#C44D58!important;font-family:'Georgia',serif!important;">0</div>
+          <div style="font-size:0.72rem!important;color:#8A8A9A!important;margin-top:5px!important;letter-spacing:1px!important;text-transform:uppercase!important;">Manual PO Splitting</div>
+        </div>
       </div>
-
-      <!-- stats table -->
-      <table style="width:100%!important;max-width:480px!important;margin:0 auto!important;border-collapse:collapse!important;background-color:#5C3B54!important;border-radius:10px!important;border:1px solid #7A5570!important;">
-        <tr>
-          <td style="padding:18px 12px!important;text-align:center!important;border-right:1px solid #7A5570!important;width:33%!important;">
-            <div style="font-size:28px!important;font-weight:900!important;color:#FFD9F0!important;">100%</div>
-            <div style="font-size:10px!important;color:#D4AECC!important;text-transform:uppercase!important;letter-spacing:1px!important;margin-top:4px!important;">Auto-Captured</div>
-          </td>
-          <td style="padding:18px 12px!important;text-align:center!important;border-right:1px solid #7A5570!important;width:33%!important;">
-            <div style="font-size:28px!important;font-weight:900!important;color:#5EEAE0!important;">1-Click</div>
-            <div style="font-size:10px!important;color:#D4AECC!important;text-transform:uppercase!important;letter-spacing:1px!important;margin-top:4px!important;">Re-Copy Anywhere</div>
-          </td>
-          <td style="padding:18px 12px!important;text-align:center!important;width:33%!important;">
-            <div style="font-size:28px!important;font-weight:900!important;color:#FFD166!important;">&#9733; Per User</div>
-            <div style="font-size:10px!important;color:#D4AECC!important;text-transform:uppercase!important;letter-spacing:1px!important;margin-top:4px!important;">Bookmark &amp; Search</div>
-          </td>
-        </tr>
-      </table>
     </div>
   </div>
 
-  <!-- ═══ OVERVIEW ═══ -->
-  <div style="padding:28px!important;background-color:#F5F5F5!important;">
-    <div style="background-color:#FFFFFF!important;border-radius:10px!important;border:1px solid #E0D6DD!important;padding:30px 34px!important;">
-      <table style="border-collapse:collapse!important;margin-bottom:18px!important;">
-        <tr>
-          <td style="width:32px!important;height:32px!important;background-color:#714B67!important;border-radius:7px!important;text-align:center!important;vertical-align:middle!important;font-size:16px!important;line-height:32px!important;">📋</td>
-          <td style="padding-left:10px!important;vertical-align:middle!important;color:#714B67!important;font-weight:700!important;font-size:11px!important;letter-spacing:2px!important;text-transform:uppercase!important;">Strategic Overview</td>
-        </tr>
-      </table>
+  <!-- OVERVIEW -->
+  <div style="padding:40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
       <table style="width:100%!important;border-collapse:collapse!important;">
         <tr>
-          <td style="width:60%!important;padding-right:28px!important;vertical-align:top!important;font-size:14px!important;line-height:1.85!important;color:#4A4060!important;">
-            Odoo users copy text dozens of times daily — addresses, names, IDs, notes — and lose them instantly. Our <strong style="color:#714B67!important;">Clipboard History Manager</strong> silently captures every copied item, stores it with a timestamp, and makes it instantly searchable and reusable from a sleek side panel, keeping your workflow <strong style="color:#017E84!important;">always productive.</strong>
-          </td>
-          <td style="width:40%!important;vertical-align:top!important;">
-            <div style="background-color:#F3EEF1!important;border-left:4px solid #714B67!important;border-radius:8px!important;padding:14px 16px!important;margin-bottom:10px!important;">
-              <div style="font-weight:700!important;font-size:13px!important;color:#714B67!important;margin-bottom:3px!important;">📋 Auto-Capture</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Every copied text is stored instantly — zero manual effort.</div>
-            </div>
-            <div style="background-color:#E6F4F5!important;border-left:4px solid #017E84!important;border-radius:8px!important;padding:14px 16px!important;">
-              <div style="font-weight:700!important;font-size:13px!important;color:#017E84!important;margin-bottom:3px!important;">⭐ Smart Bookmarks</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Star important items and access them anytime from Bookmarks tab.</div>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <!-- ═══ CORE CAPABILITIES ═══ -->
-  <div style="padding:0 28px 28px!important;background-color:#F5F5F5!important;">
-    <div style="background-color:#FFFFFF!important;border-radius:10px!important;border:1px solid #E0D6DD!important;padding:30px 34px!important;">
-      <div style="text-align:center!important;margin-bottom:22px!important;">
-        <div style="display:inline-block!important;background-color:#F3EEF1!important;color:#714B67!important;padding:4px 14px!important;border-radius:30px!important;font-size:10px!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D9C8D5!important;margin-bottom:6px!important;">What's Inside</div>
-        <div style="font-size:24px!important;font-weight:900!important;color:#2C2640!important;">Core Capabilities</div>
-      </div>
-      <!-- row 1 -->
-      <table style="width:100%!important;border-collapse:collapse!important;">
-        <tr>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#F3EEF1!important;border:1px solid #D9C8D5!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#714B67!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">📋</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">Auto-Capture</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Silently captures every copied text with timestamp.</div>
+          <!-- Left: text -->
+          <td style="width:65%!important;padding-right:32px!important;vertical-align:top!important;">
+            <table style="border-collapse:collapse!important;margin-bottom:14px!important;">
+              <tr>
+                <td style="width:36px!important;height:36px!important;background-color:#1A1A2E!important;border-radius:8px!important;text-align:center!important;vertical-align:middle!important;font-size:1.1rem!important;padding:6px!important;">🎯</td>
+                <td style="padding-left:12px!important;vertical-align:middle!important;color:#1A1A2E!important;font-weight:700!important;font-size:0.78rem!important;letter-spacing:2px!important;text-transform:uppercase!important;font-family:'Georgia',serif!important;">Strategic Overview</td>
+              </tr>
+            </table>
+            <div style="font-size:1rem!important;line-height:1.8!important;color:#4A4A5A!important;">
+              Retail inventory mismanagement leads to <strong style="color:#C44D58!important;">15% lost sales</strong>. Our <strong style="color:#1A1A2E!important;">POS Product Stock Indicator</strong> connects cashiers directly to the supply chain — delivering real-time On-Hand &amp; Incoming visibility during sales and triggering restocking automatically, keeping you always <strong style="color:#0F6E56!important;">Stock-Ready.</strong>
             </div>
           </td>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#FDF4E3!important;border:1px solid #F5D9A0!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#714B67!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">⭐</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">Bookmark Items</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Star important items for quick future access.</div>
+          <!-- Right: feature boxes -->
+          <td style="width:35%!important;vertical-align:top!important;">
+            <div style="background-color:#F0F7FF!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #3A86FF!important;margin-bottom:12px!important;">
+              <div style="color:#0C447C!important;font-weight:700!important;font-size:0.88rem!important;margin-bottom:4px!important;font-family:'Georgia',serif!important;">⚡ Real-Time Sync</div>
+              <div style="font-size:0.85rem!important;color:#185FA5!important;line-height:1.5!important;">Instant stock updates across all POS devices — zero delay.</div>
             </div>
-          </td>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#E6F4F5!important;border:1px solid #B0DCDF!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#017E84!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">🔍</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">Smart Search</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Instantly filter history with live search and result count.</div>
-            </div>
-          </td>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#EBF7EE!important;border:1px solid #A8DDB5!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#28A745!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">⚡</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">1-Click Re-Copy</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Copy any past item back to clipboard instantly.</div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#FDF0F0!important;border:1px solid #F0BFBD!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#D9534F!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">🗑️</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">Delete Items</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Remove individual items or clear full history cleanly.</div>
-            </div>
-          </td>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#E6F4F5!important;border:1px solid #B0DCDF!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#017E84!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">🔔</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">Notifications</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Toggle action notifications for every clipboard event.</div>
-            </div>
-          </td>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#F3EEF1!important;border:1px solid #D9C8D5!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#714B67!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">⚙️</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">Settings Panel</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Enable/disable features and configure preferences easily.</div>
-            </div>
-          </td>
-          <td style="width:25%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#FDF4E3!important;border:1px solid #F5D9A0!important;border-radius:9px!important;padding:18px 12px!important;text-align:center!important;">
-              <div style="width:40px!important;height:40px!important;background-color:#E9A53A!important;border-radius:50%!important;font-size:18px!important;line-height:40px!important;text-align:center!important;margin:0 auto 9px!important;">🏆</div>
-              <div style="font-weight:700!important;font-size:13px!important;color:#2C2640!important;margin-bottom:4px!important;">Premium Features</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Copy frequency tracking &amp; customizable notifications.</div>
+            <div style="background-color:#EDFAF5!important;padding:16px 20px!important;border-radius:10px!important;border-left:3px solid #06D6A0!important;">
+              <div style="color:#085041!important;font-weight:700!important;font-size:0.88rem!important;margin-bottom:4px!important;font-family:'Georgia',serif!important;">🛒 Auto-Restock</div>
+              <div style="font-size:0.85rem!important;color:#0F6E56!important;line-height:1.5!important;">Automated vendor-wise PO splitting engine — fully hands-free.</div>
             </div>
           </td>
         </tr>
@@ -149,278 +69,178 @@
     </div>
   </div>
 
-  <!-- ═══ WORKFLOW SHOWCASE ═══ -->
-  <div style="padding:0 28px 28px!important;background-color:#F5F5F5!important;">
-    <div style="background-color:#FFFFFF!important;border-radius:10px!important;border:1px solid #E0D6DD!important;padding:30px 34px!important;">
-      <div style="text-align:center!important;margin-bottom:26px!important;">
-        <div style="display:inline-block!important;background-color:#F3EEF1!important;color:#714B67!important;padding:4px 14px!important;border-radius:30px!important;font-size:10px!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D9C8D5!important;margin-bottom:6px!important;">Workflow Showcase</div>
-        <div style="font-size:24px!important;font-weight:900!important;color:#2C2640!important;margin-bottom:4px!important;">Clipboard History &amp; Bookmarks</div>
-        <div style="font-size:13px!important;color:#6B6681!important;font-style:italic!important;">From installation to one-click re-use — your clipboard, always under control.</div>
+  <!-- CORE CAPABILITIES -->
+  <div style="padding:0 40px 40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
+      <div style="text-align:center!important;margin-bottom:32px!important;">
+        <div style="display:inline-block!important;background-color:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">What's Inside</div>
+        <div style="font-weight:700!important;color:#1A1A2E!important;font-size:1.7rem!important;font-family:'Georgia',serif!important;">Core Capabilities</div>
       </div>
-
-      <!-- STEP 1 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #D9C8D5!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#F3EEF1!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#714B67!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">1</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">Install the Module</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Search <strong style="color:#714B67!important;">Clipboard History Manager</strong> in Odoo Apps and click <strong>Module Info</strong> to install. No dependencies required.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #D9C8D5!important;">
-          <img src="img_1.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 1">
-        </div>
-      </div>
-
-      <!-- STEP 2 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #B0DCDF!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#E6F4F5!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#017E84!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">2</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">Clipboard History Panel</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Click the <strong style="color:#017E84!important;">Clipboard icon</strong> in top bar. The <strong>History tab</strong> shows all copied items with timestamps. Bookmarked items are highlighted with a ★ star.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #B0DCDF!important;">
-          <img src="img_2.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 2">
-        </div>
-      </div>
-
-      <!-- STEP 3 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #C8C0D8!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#EEEAF4!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#5C3B54!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">3</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">View Clipboard History</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">The History tab tooltip confirms <strong style="color:#5C3B54!important;">"View clipboard history"</strong>. All captured items listed newest-first with precise copy timestamps for full traceability.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #C8C0D8!important;">
-          <img src="img_3.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 3">
-        </div>
-      </div>
-
-      <!-- STEP 4 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #B0DCDF!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#E6F4F5!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#017E84!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">4</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">Smart Search &amp; Filter</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Type in the search bar to instantly filter history. Shows a result count (e.g. <strong style="color:#017E84!important;">"3 results found"</strong>) — retrieval is instant even with large histories.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #B0DCDF!important;">
-          <img src="img_4.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 4">
-        </div>
-      </div>
-
-      <!-- STEP 5 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #D9C8D5!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#F3EEF1!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#714B67!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">5</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">1-Click Re-Copy</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Hover any history item to reveal action buttons. Click the <strong style="color:#714B67!important;">Copy icon</strong> to instantly put that text back on your clipboard — ready to paste anywhere in Odoo.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #D9C8D5!important;">
-          <img src="img_5.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 5">
-        </div>
-      </div>
-
-      <!-- STEP 6 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #F5D9A0!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#FDF4E3!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#E9A53A!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">6</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">Bookmark &amp; Remove Bookmark</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Click the <strong style="color:#E9A53A!important;">★ Star button</strong> to bookmark any item. Tooltip shows <strong>"Remove bookmark"</strong> when active — toggling is instant and persistent across sessions.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #F5D9A0!important;">
-          <img src="img_6.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 6">
-        </div>
-      </div>
-
-      <!-- STEP 7 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #F0BFBD!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#FDF0F0!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#D9534F!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">7</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">Delete Items</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Click the <strong style="color:#D9534F!important;">🗑️ Delete icon</strong> to remove any entry from history permanently. Keep your clipboard list clean and relevant at all times.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #F0BFBD!important;">
-          <img src="img_7.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 7">
-        </div>
-      </div>
-
-      <!-- STEP 8 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:13px!important;border:1px solid #F5D9A0!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#FDF4E3!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#E9A53A!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">8</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">Bookmarks Tab</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">Switch to <strong style="color:#E9A53A!important;">Bookmarks tab</strong> for a dedicated view of all starred items only — your personal shortlist of frequently reused text, always at hand.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #F5D9A0!important;">
-          <img src="img_8.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 8">
-        </div>
-      </div>
-
-      <!-- STEP 9 -->
-      <div style="border-radius:9px!important;overflow:hidden!important;margin-bottom:0!important;border:1px solid #A8DDB5!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;background-color:#EBF7EE!important;">
-          <tr>
-            <td style="width:46px!important;padding:16px 0 16px 18px!important;vertical-align:top!important;">
-              <div style="width:32px!important;height:32px!important;background-color:#28A745!important;border-radius:7px!important;color:#FFFFFF!important;font-weight:900!important;font-size:14px!important;text-align:center!important;line-height:32px!important;">9</div>
-            </td>
-            <td style="padding:16px 18px!important;vertical-align:middle!important;">
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:2px!important;">Settings &amp; Premium Features</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.5!important;">The <strong style="color:#28A745!important;">Settings tab</strong> lets you enable/disable Clipboard Manager and Notifications toggles. Premium: auto-capture, bookmark management, smart search, copy frequency tracking, customizable notifications.</div>
-            </td>
-          </tr>
-        </table>
-        <div style="padding:12px 16px!important;background-color:#FAFAFA!important;border-top:1px solid #A8DDB5!important;">
-          <img src="img_9.jpeg" style="width:100%!important;border-radius:7px!important;border:1px solid #E0D6DD!important;display:block!important;" alt="Step 9">
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ═══ USER-WISE PERSISTENT HISTORY ═══ -->
-  <div style="padding:0 28px 30px!important;background-color:#F5F5F5!important;">
-    <div style="background-color:#FFFFFF!important;border-radius:10px!important;border:1px solid #E0D6DD!important;padding:30px 34px!important;">
-
-      <div style="text-align:center!important;margin-bottom:20px!important;">
-        <div style="display:inline-block!important;background-color:#F3EEF1!important;color:#714B67!important;padding:4px 14px!important;border-radius:30px!important;font-size:10px!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D9C8D5!important;margin-bottom:6px!important;">Key Feature</div>
-        <div style="font-size:24px!important;font-weight:900!important;color:#2C2640!important;margin-bottom:4px!important;">&#128100; User-Wise Persistent History</div>
-        <div style="font-size:13px!important;color:#6B6681!important;font-style:italic!important;">Clipboard history is saved per user — logout and login again, your history is always there.</div>
-      </div>
-
-      <!-- banner — solid dark purple, NO gradient, NO rgba -->
-      <div style="background-color:#5C3B54!important;border-radius:10px!important;padding:26px 28px!important;margin-bottom:20px!important;">
-        <table style="width:100%!important;border-collapse:collapse!important;">
-          <tr>
-            <td style="width:55%!important;padding-right:24px!important;vertical-align:top!important;">
-              <div style="color:#F9D8EF!important;font-size:10px!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;margin-bottom:10px!important;">✦ &nbsp; How It Works</div>
-              <div style="color:#EDD9E6!important;font-size:14px!important;line-height:1.8!important;">
-                Every clipboard item is stored in <strong style="color:#FFD9F0!important;">Odoo's database</strong> linked to the logged-in user's ID. When the user logs out and logs back in — even from a different browser or device — their complete clipboard history and bookmarks are <strong style="color:#FFD9F0!important;">fully restored automatically.</strong>
-              </div>
-            </td>
-            <td style="width:45%!important;vertical-align:top!important;">
-
-              <!-- row 1 -->
-              <div style="background-color:#714B67!important;border:1px solid #875A7B!important;border-radius:8px!important;padding:10px 14px!important;margin-bottom:9px!important;">
-                <table style="border-collapse:collapse!important;width:100%!important;">
-                  <tr>
-                    <td style="width:12px!important;vertical-align:middle!important;padding-right:9px!important;">
-                      <div style="width:9px!important;height:9px!important;border-radius:50%!important;background-color:#FFD9F0!important;">&nbsp;</div>
-                    </td>
-                    <td style="vertical-align:middle!important;">
-                      <div style="font-size:13px!important;font-weight:700!important;color:#FFE5F5!important;">&#128272; User A logs out</div>
-                      <div style="font-size:11px!important;color:#D4AECC!important;margin-top:2px!important;">History saved to DB under User A's ID</div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-
-              <!-- row 2 -->
-              <div style="background-color:#714B67!important;border:1px solid #875A7B!important;border-radius:8px!important;padding:10px 14px!important;margin-bottom:9px!important;">
-                <table style="border-collapse:collapse!important;width:100%!important;">
-                  <tr>
-                    <td style="width:12px!important;vertical-align:middle!important;padding-right:9px!important;">
-                      <div style="width:9px!important;height:9px!important;border-radius:50%!important;background-color:#5EEAE0!important;">&nbsp;</div>
-                    </td>
-                    <td style="vertical-align:middle!important;">
-                      <div style="font-size:13px!important;font-weight:700!important;color:#FFE5F5!important;">&#9989; User A logs back in</div>
-                      <div style="font-size:11px!important;color:#D4AECC!important;margin-top:2px!important;">Full history &amp; bookmarks instantly restored</div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-
-              <!-- row 3 -->
-              <div style="background-color:#714B67!important;border:1px solid #875A7B!important;border-radius:8px!important;padding:10px 14px!important;">
-                <table style="border-collapse:collapse!important;width:100%!important;">
-                  <tr>
-                    <td style="width:12px!important;vertical-align:middle!important;padding-right:9px!important;">
-                      <div style="width:9px!important;height:9px!important;border-radius:50%!important;background-color:#FFD166!important;">&nbsp;</div>
-                    </td>
-                    <td style="vertical-align:middle!important;">
-                      <div style="font-size:13px!important;font-weight:700!important;color:#FFE5F5!important;">&#128274; User B logs in</div>
-                      <div style="font-size:11px!important;color:#D4AECC!important;margin-top:2px!important;">Sees only their own history — fully isolated</div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <!-- 3 bottom cards -->
-      <table style="width:100%!important;border-collapse:collapse!important;">
+      <table style="width:100%!important;border-collapse:separate!important;border-spacing:14px!important;">
         <tr>
-          <td style="width:33%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#F3EEF1!important;border:1px solid #D9C8D5!important;border-radius:9px!important;padding:20px 14px!important;text-align:center!important;">
-              <div style="font-size:28px!important;margin-bottom:7px!important;">&#128190;</div>
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:4px!important;">Persistent Storage</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.55!important;">History stored in Odoo DB — survives logout, browser close, and session expiry.</div>
-            </div>
+          <td style="width:25%!important;background-color:#F0F4FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #C7D4F5!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">📊</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Visual Intelligence</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Color-coded stock badges with dynamic alerts.</div>
           </td>
-          <td style="width:33%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#E6F4F5!important;border:1px solid #B0DCDF!important;border-radius:9px!important;padding:20px 14px!important;text-align:center!important;">
-              <div style="font-size:28px!important;margin-bottom:7px!important;">&#128100;</div>
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:4px!important;">Per-User Isolation</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.55!important;">Each user's clipboard is private. Multi-user environments fully supported.</div>
-            </div>
+          <td style="width:25%!important;background-color:#FFF8EC!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F0D9A0!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🎯</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">On-Demand Accuracy</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Restocking requests from POS cards instantly.</div>
           </td>
-          <td style="width:33%!important;padding:6px!important;vertical-align:top!important;">
-            <div style="background-color:#FDF4E3!important;border:1px solid #F5D9A0!important;border-radius:9px!important;padding:20px 14px!important;text-align:center!important;">
-              <div style="font-size:28px!important;margin-bottom:7px!important;">&#127758;</div>
-              <div style="font-weight:700!important;font-size:14px!important;color:#2C2640!important;margin-bottom:4px!important;">Cross-Device Access</div>
-              <div style="font-size:12px!important;color:#6B6681!important;line-height:1.55!important;">Login from any browser or device — history instantly available, no sync needed.</div>
-            </div>
+          <td style="width:25%!important;background-color:#EDFAF5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #9FE1CB!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">⚡</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Automated Fulfillment</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Vendor-splitting for rapid PO generation.</div>
+          </td>
+          <td style="width:25%!important;background-color:#F3EFFE!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #CECBF6!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🔄</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Live Sync Engine</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Unified data across Backend and POS.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:25%!important;background-color:#FEF0F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #F4C0D1!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🛒</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Smart Restock Cart</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">POS queue for multi-product floor demands.</div>
+          </td>
+          <td style="width:25%!important;background-color:#E8F8F5!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #5DCAA5!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🚛</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Transit Transparency</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Track confirmed POs and upcoming arrivals.</div>
+          </td>
+          <td style="width:25%!important;background-color:#F5F0FF!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #AFA9EC!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🏢</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Multi-Vendor Logic</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">Intelligent mapping for complex procurement.</div>
+          </td>
+          <td style="width:25%!important;background-color:#FFF8E8!important;padding:22px 18px!important;border-radius:10px!important;text-align:center!important;border:1px solid #FAC775!important;vertical-align:top!important;">
+            <div style="width:44px!important;height:44px!important;background-color:#1A1A2E!important;border-radius:50%!important;font-size:1.3rem!important;margin:0 auto 12px!important;line-height:44px!important;text-align:center!important;">🏆</div>
+            <div style="font-weight:700!important;color:#1A1A2E!important;font-size:0.88rem!important;margin-bottom:6px!important;font-family:'Georgia',serif!important;">Data Integrity</div>
+            <div style="font-size:0.8rem!important;color:#4A4A5A!important;line-height:1.55!important;">High-precision syncing for warehouse ops.</div>
           </td>
         </tr>
       </table>
+    </div>
+  </div>
+
+  <!-- WORKFLOW SHOWCASE — SINGLE COLUMN -->
+  <div style="padding:0 40px 40px!important;background-color:#F8F6F1!important;">
+    <div style="background-color:#FFFFFF!important;border-radius:14px!important;padding:36px 40px!important;border:1px solid #E2D9C8!important;">
+      <div style="text-align:center!important;margin-bottom:32px!important;">
+        <div style="display:inline-block!important;background-color:#F3EFE8!important;color:#6B5B3E!important;padding:5px 16px!important;border-radius:30px!important;font-size:0.72rem!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase!important;border:1px solid #D4C9B0!important;margin-bottom:10px!important;">Workflow Showcase</div>
+        <div style="font-weight:700!important;color:#1A1A2E!important;font-size:1.7rem!important;margin-bottom:8px!important;font-family:'Georgia',serif!important;">Stock Indicator &amp; Restocking</div>
+        <div style="color:#7A7A8A!important;font-size:0.92rem!important;font-style:italic!important;font-family:'Georgia',serif!important;">From POS floor demand to validated inventory fulfillment.</div>
+      </div>
+
+      <!-- Step 1 -->
+      <div style="border:1px solid #FADCDC!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#FEF5F5!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#C44D58!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">1</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Visual Stock Alerts</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Low stock triggers a <strong style="color:#C44D58!important;">Red HUD Badge</strong>. Cashiers start restocking by clicking <strong>✦ ON DEMAND</strong> cards immediately.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #FADCDC!important;">
+          <img src="img_1.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 1">
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div style="border:1px solid #F0D9A0!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#FFF8EE!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#BA7517!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">2</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Instant Restock Cart</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">A smart <strong style="color:#BA7517!important;">On-Demand Queue</strong> inside POS to validate quantities before confirming the restocking mission.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #F0D9A0!important;">
+          <img src="img_2.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 2">
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div style="border:1px solid #C7D4F5!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#EFF5FF!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#185FA5!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">3</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Smart PO Splitting</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Backend splits orders by primary <strong style="color:#185FA5!important;">Vendors</strong> automatically for clean, organized procurement.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #C7D4F5!important;">
+          <img src="img_3.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 3">
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div style="border:1px solid #9FE1CB!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#EDFAF5!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#0F6E56!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">4</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Live Stock Reception</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Receiving stock instantly updates the <strong style="color:#0F6E56!important;">On-Hand HUD</strong> across all POS devices. No manual refresh required.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #9FE1CB!important;">
+          <img src="img_4.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 4">
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div style="border:1px solid #CECBF6!important;border-radius:10px!important;margin-bottom:16px!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#F5F0FF!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#534AB7!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">5</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Upcoming Stock List</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Dashboard to see all <strong style="color:#534AB7!important;">Future Incoming Qty</strong> and confirmed Purchase Orders already on their way.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #CECBF6!important;">
+          <img src="img_5.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 5">
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div style="border:1px solid #D4C9B0!important;border-radius:10px!important;margin-bottom:0!important;overflow:hidden!important;">
+        <table style="width:100%!important;border-collapse:collapse!important;background-color:#F5F4F2!important;">
+          <tr>
+            <td style="width:36px!important;padding:18px 0 18px 22px!important;vertical-align:middle!important;">
+              <div style="width:36px!important;height:36px!important;background-color:#4A4A5A!important;border-radius:8px!important;color:#FFFFFF!important;font-weight:700!important;font-size:1rem!important;text-align:center!important;line-height:36px!important;">6</div>
+            </td>
+            <td style="padding:18px 22px 18px 14px!important;vertical-align:middle!important;">
+              <div style="color:#1A1A2E!important;font-weight:700!important;font-size:1rem!important;margin-bottom:3px!important;font-family:'Georgia',serif!important;">Precise Data Accuracy</div>
+              <div style="color:#7A7A8A!important;font-size:0.85rem!important;line-height:1.5!important;">Warehouse-level precision ensures POS team always has the most <strong style="color:#4A4A5A!important;">accurate stock data</strong> for customer assurance.</div>
+            </td>
+          </tr>
+        </table>
+        <div style="padding:16px 22px!important;background-color:#FAFAF8!important;border-top:1px solid #D4C9B0!important;">
+          <img src="img_6.png" style="width:100%!important;border-radius:8px!important;border:1px solid #E2D9C8!important;display:block!important;" alt="Step 6">
+        </div>
+      </div>
 
     </div>
   </div>
